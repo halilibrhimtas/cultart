@@ -3,9 +3,9 @@
 # Ürün ile ilgili bilgiler
 
 ## Takım Elemanları
-- Emine Kala - Product Owner
-- Halil İbrahim Taş - Scrum Master, Developer
+- Halil İbrahim Taş - Product Owner, Scrum Master, Developer
 - Ataberk Akyalçın - Developer 
+- Emine Kala - Developer
 
 ## Ürün İsmi
 CULTART
