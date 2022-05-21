@@ -1,17 +1,23 @@
-# cultart
+# Takım 66
 
-A new Flutter application.
+# Ürün ile ilgili bilgiler
 
-## Getting Started
+## Takım Elemanları
+- Halil İbrahim Taş - Product Owner, Scrum Master, Developer
+- Ataberk Akyalçın - Developer 
+- Emine Kala - Developer
 
-This project is a starting point for a Flutter application.
+## Ürün İsmi
+CULTART
 
-A few resources to get you started if this is your first Flutter project:
+## Ürün açıklaması
+Bu uygulama ile kültür ve sanat anlamında çok güzel film, kitap ve tiyatro içeriklerine ulaşabileceksiniz. Ayrıca size yakın olan sinema salonlarını harita üzerinden görebileceksiniz. Kullanıcılar arası kitap paylaşımı ile farklı farklı kitaplar hakkında bilgi edinebileceksiniz.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Hedef Kitle
+- Tiyatro severler
+- Sinema severler
+- Kitap kurtları
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# cultart
+## Product backlog URL
+https://miro.com/app/board/uXjVOzu_C3k=/?share_link_id=535270060641
+
