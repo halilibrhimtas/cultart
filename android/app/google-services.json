@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "215827545585",
+    "project_id": "cultart-a4742",
+    "storage_bucket": "cultart-a4742.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215827545585:android:74c661f9649c20cba85850",
+        "android_client_info": {
+          "package_name": "com.example.cultart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215827545585-5oaguv3t978on2duqfrdm304m1q980bk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cultart",
+            "certificate_hash": "7e87925722944625f4e2e71f49cd55681391aecd"
+          }
+        },
+        {
+          "client_id": "215827545585-4v5gd9ut96l4lni35i3pf0beand47a35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXzFlGdHdl6Ja2c64zc_yUITkMrtpWEwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215827545585-4v5gd9ut96l4lni35i3pf0beand47a35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

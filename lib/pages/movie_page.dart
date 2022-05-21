@@ -1,30 +1,22 @@
 
-import 'package:cultart/models/movie_model.dart';
-import 'package:cultart/service/api_service.dart';
+import 'package:cultart/home/login/login_page.dart';
+import 'package:cultart/models/movie.dart';
+import 'package:cultart/pages/movie_detail_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../service/movie_state.dart';
 
-import 'movie_detail_page.dart';
 
-class MoviePage extends StatefulWidget {
+class MoviePage extends ConsumerStatefulWidget {
   const MoviePage({Key? key}) : super(key: key);
 
   @override
   _MoviePageState createState() => _MoviePageState();
 }
 
-class _MoviePageState extends State<MoviePage> {
-  List<MovieModel> movieModel = [];
+class _MoviePageState extends ConsumerState<MoviePage> {
 
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    getData();
-  }
-  void getData() async{
-    movieModel = (await ApiService().getMovie());
-    Future.delayed(const Duration(seconds: 1)).then((value) => setState(() {}));
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,77 +41,65 @@ class _MoviePageState extends State<MoviePage> {
         actions: [
           Container(
             margin: const EdgeInsets.only(right: 15),
-            child: const Icon(Icons.search_outlined, color: Colors.black38,),
+            child: IconButton(icon: const Icon(Icons.exit_to_app_rounded), color: Colors.black38, onPressed: () async {
+              await FirebaseAuth.instance.signOut().then((value) => Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const LoginPage())));
+            },),
           )
         ],
       ),
-    body: movieModel.isEmpty
-        ? const Center(child: CircularProgressIndicator(),)
-        : FilmKart(movieModel: movieModel)
+    body: const FilmKart()
     );
   }
 }
 
+class FilmKart extends ConsumerWidget {
+   const FilmKart({Key? key}) : super(key: key);
 
-// ignore: must_be_immutable
-class FilmKart extends StatefulWidget {
-   const FilmKart({
-    Key? key,
-    required this.movieModel,
-  }) : super(key: key);
-
-  final List<MovieModel> movieModel;
 
 
   @override
-  State<FilmKart> createState() => _FilmKartState();
-}
-
-class _FilmKartState extends State<FilmKart> {
-  PageController controller = PageController();
-
-@override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-    controller.dispose();
-  }
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
+  Widget build(BuildContext context, WidgetRef ref) {
+    AsyncValue<List<MovieModel>> movie = ref.watch(movieStateFuture);
+    return movie.when(
+    loading: () => const Center(child: CircularProgressIndicator(),),
+    error: (err, stack) => Center(child: Text(err.toString())),
+    data: (movie) => Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15),
       child: PageView.builder(
-        itemCount: widget.movieModel.length,
-        itemBuilder: (context, index) => Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
+        itemCount: movie.length,
+          itemBuilder: (context, index) => Column(
+              children: [
             Container(
-              height: 300,
-              width: 250,
-              decoration: BoxDecoration(
+             height: 300,
+               width: 250,
+               decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
               image: DecorationImage(
                 fit: BoxFit.fill,
-                  image: Image.network("https://image.tmdb.org/t/p/original/${widget.movieModel[index].posterPath}",).image
-              )
-              ),
+                  image: Image.network("https://image.tmdb.org/t/p/original/${movie[index].posterPath}").image
+               )
+               ),
             ),
-            Text((widget.movieModel[index].title)!),
-             Row(
+
+             TextButton(
+                onPressed:(){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => MovieDetailPage(index, movie)));
+                },
+                 child: Text(
+                     (movie[index].title)!.toUpperCase(),
+                   style: const TextStyle()),
+                 ),
+              Row(
                mainAxisAlignment: MainAxisAlignment.center,
-               children: [
-                 const Icon(Icons.star),
-                 TextButton(
-                     onPressed:(){
-                       Navigator.push(context, MaterialPageRoute(builder: (context) => MoiveDetailPage(index: index, movieModel: widget.movieModel,)));
-                       },
-                     child: Text((widget.movieModel[index].voteAverage)!))
-               ],
-             )
-          ],
-        ),
-      ),
-    );
+                children: [
+                  const Icon(Icons.star),
+                  Text((movie[index].voteAverage)!)
+                ],
+              )
+            ],
+          ) ) ,));
   }
 }
