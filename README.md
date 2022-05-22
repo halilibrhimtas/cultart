@@ -48,6 +48,6 @@ https://miro.com/app/board/uXjVOzu_C3k=/?share_link_id=535270060641
 
 - **Sprint Review**:
 Film için veriler Tmdb'den çekilmiştir. Örnek vizyona girecek olan film ve tiyatrolar için veritabanları oluşturulmasına karar verilmiştir. Şuanlık 5 ildeki sinema ve tiyatro oyunları olmasına karar verilmiştir.
-- **Sprint Retrospective**:
+ **Sprint Retrospective**:
 - Uygulama yapım hızı daha da arttırılmalı
 - Tahmini puanlar gözden geçirilmeli
