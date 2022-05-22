@@ -21,6 +21,9 @@ Bu uygulama ile kültür ve sanat anlamında çok güzel film, kitap ve tiyatro 
 ## Product backlog URL
 https://miro.com/app/board/uXjVOzu_C3k=/?share_link_id=535270060641
 
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+-  **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Turuncu item'lar gelecek sprintte yapılacak olanları ifade ederken, mavi item'lar şuan ki sprintte yapılmış olanları ifade eder.
+-  **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Wahtsapp üzerinden yapılmasına karar verilmiştir. Fotoğraf olarak paylaşılacaktır.
 ## Sprint Board Update
 ![1](https://user-images.githubusercontent.com/74383996/169709064-54237b2c-9cf4-4376-9761-f6959fc9e668.PNG)
 ![2](https://user-images.githubusercontent.com/74383996/169709067-884f123a-adb9-445c-8408-463beed7758f.PNG)
@@ -34,7 +37,8 @@ https://miro.com/app/board/uXjVOzu_C3k=/?share_link_id=535270060641
 ![WhatsApp Image 2022-05-22 at 20 49 47 (1)](https://user-images.githubusercontent.com/74383996/169709188-83f57fc7-ddf5-4644-bb46-5a3131542723.jpeg)
 ![WhatsApp Image 2022-05-22 at 20 49 47](https://user-images.githubusercontent.com/74383996/169709189-fb446184-daab-4bab-9115-5e48e785b14a.jpeg)
 ![WhatsApp Image 2022-05-22 at 20 49 48 (1)](https://user-images.githubusercontent.com/74383996/169709193-308a396a-f587-4f77-b66b-0ef901011081.jpeg)
-
-## Sprin Retrospective
+## Sprint Review
+Film için veriler Tmdb'den çekilmiştir. Örnek vizyona girecek olan film ve tiyatrolar için veritabanları oluşturulmasına karar verilmiştir. Şuanlık 5 ildeki sinema ve tiyatro oyunları olmasına karar verilmiştir.
+## Sprint Retrospective
 - Uygulama yapım hızı daha da arttırılmalı
-
+- Tahmini puanlar gözden geçirilmeli
