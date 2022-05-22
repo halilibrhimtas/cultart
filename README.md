@@ -18,6 +18,9 @@ Bu uygulama ile kültür ve sanat anlamında çok güzel film, kitap ve tiyatro 
 - Sinema severler
 - Kitap kurtları
 
+## Sprint 2
+
+
 ## Product backlog URL
 https://miro.com/app/board/uXjVOzu_C3k=/?share_link_id=535270060641
 
