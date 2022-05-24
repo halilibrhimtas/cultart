@@ -18,17 +18,15 @@ Bu uygulama ile kültür ve sanat anlamında çok güzel film, kitap ve tiyatro 
 - Sinema severler
 - Kitap kurtları
 
-## Sprint 2
-
-
 - **Product backlog URL**:
 https://miro.com/app/board/uXjVOzu_C3k=/?share_link_id=535270060641
 
-- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
-- **Sprint içinde tamamlanması tahmin edilen puan**: 150
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 2 sprint'e bölündüğünde ilk sprint'in en azından 150 ile başlaması gerektiğine karar verildi.
+## Sprint 2
+- **Sprint Notları**: User Story'ler product backlogların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+- **Sprint içinde tamamlanması tahmin edilen puan**: 80
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. İlk sprint'in en azından 80 e başlaması gerektiğine karar verildi.
 
--  **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Turuncu item'lar gelecek sprintte yapılacak olanları ifade ederken, mavi item'lar şuan ki sprintte yapılmış olanları ifade eder.
+-  **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Turuncu item'lar gelecek sprintte yapılacak olanları ifade ederken, mavi item'lar şuan ki sprintte yapılmış olanları ifade eder. Yeşil itemler ise geçmiş sprintte yapılmış olanları ifade eder.
 
 -  **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Wahtsapp üzerinden yapılmasına karar verilmiştir. Fotoğraf olarak paylaşılacaktır.
 ![WhatsApp Image 2022-05-22 at 22 13 26 (1)](https://user-images.githubusercontent.com/74383996/169712090-9c7b4576-6ee2-4b36-9d60-d7acce426373.jpeg)
@@ -67,3 +65,13 @@ Film için veriler Tmdb'den çekilmiştir. Örnek vizyona girecek olan film ve t
 
    - Uygulama yapım hızı daha da arttırılmalı
    - Tahmini puanlar gözden geçirilmeli
+
+## Sprint 3
+- **Sprint Notları**: User Story'ler product backlogların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+- **Sprint içinde tamamlanması tahmin edilen puan**: 300
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. İkinci sprint'in 300 puan olması gerektiğine karar verildi.
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Wahtsapp üzerinden yapılmasına karar verilmiştir. Fotoğraf olarak paylaşılacaktır.
+- ![_Halil kişisinden fotoğraf](https://user-images.githubusercontent.com/74383996/169966694-db5492a9-de98-49db-9918-1ea2ce7d05b3.jpg)
+- **Sprint Board Update**:
+- ![image](https://user-images.githubusercontent.com/74383996/169966614-54887345-b5b4-4bcf-8fe3-2a83c3d9dce3.png)
+
