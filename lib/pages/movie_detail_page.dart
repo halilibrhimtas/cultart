@@ -23,7 +23,7 @@ class _MovieDetailPageState extends ConsumerState<MovieDetailPage> {
 
 
   void getCast() async{
-    castList = await ApiService().getCastList(widget.movie[widget.index].id);
+    castList = await ApiService().getCastList(widget.movie[widget.index].id!);
     Future.delayed(const Duration(seconds: 1)).then((value) => setState(() {}));
   }
 
@@ -104,9 +104,8 @@ class _MovieDetailPageState extends ConsumerState<MovieDetailPage> {
             ),
 
           ),
-                    ],
+        ],
       ),
     );
   }
 }
-
