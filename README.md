@@ -4,7 +4,7 @@
 
 ## Takım Elemanları
 -> Halil İbrahim Taş - Product Owner, Scrum Master, Developer
--> Ataberk Akyalçın - Developer 
+-> Ataberk Akyalçın - Developer test
 -> Emine Kala - Developer
 
 ## Ürün İsmi
