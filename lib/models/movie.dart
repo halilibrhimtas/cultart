@@ -1,5 +1,3 @@
-
-
 class MovieModel {
   final int? id;
   final bool? video;
@@ -29,7 +27,7 @@ class MovieModel {
     this.posterPath,
     this.popularity,
     this.mediaType,
-    }
+  }
       );
 
   factory MovieModel.fromJson(Map<String, dynamic> json){
@@ -47,18 +45,17 @@ class MovieModel {
         voteAverage: json['vote_average'].toString()
     );
   }
-   Map<String, dynamic> toJson() => {
-     "id" : id,
-     "originalTitle" : originalTitle,
-     "backdropPath":backdropPath,
-     "overview":overview,
-     "popularity":popularity,
-     "posterPath":posterPath,
-     "releaseDate":releaseDate,
-     "title":title,
-     "video":video,
-     "voteCount":voteCount,
-     "voteAverage" : voteAverage,
-   };
+  Map<String, dynamic> toJson() => {
+    "id" : id,
+    "originalTitle" : originalTitle,
+    "backdropPath":backdropPath,
+    "overview":overview,
+    "popularity":popularity,
+    "posterPath":posterPath,
+    "releaseDate":releaseDate,
+    "title":title,
+    "video":video,
+    "voteCount":voteCount,
+    "voteAverage" : voteAverage,
+  };
 }
-
