@@ -1,7 +1,7 @@
 
 import 'package:cultart/pages/book_page.dart';
 import 'package:cultart/pages/movie_page.dart';
-import 'package:cultart/pages/theatre_page.dart';
+import 'package:cultart/pages/tiyatrolar/theatre_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {

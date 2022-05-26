@@ -2,6 +2,7 @@ import 'package:cultart/home/login/google_sign_in.dart';
 import 'package:cultart/home/login/signIn_page.dart';
 import 'package:cultart/home/login/signUp_page.dart';
 import 'package:flutter/material.dart';
+import 'package:local_auth/local_auth.dart';
 
 import '../home_page.dart';
 
@@ -14,6 +15,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final LocalAuthentication localAuthentication = LocalAuthentication();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,6 +65,27 @@ class _LoginPageState extends State<LoginPage> {
                       builder: (context) => const HomePage())));
             },
                 child: const Text("Sign in with Google")),
+            ElevatedButton(
+                onPressed: () async {
+                  bool isAuthenticated = await FingerPrint();
+                  if(isAuthenticated){
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()
+                        )
+                    );
+
+                  } else {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                          content: Text('Error authenticating using Biometrics.')
+                      ),
+                    );
+                  }
+
+                },
+                child: const Text("Finger Print")),
             const SizedBox(height: 50),
             TextButton(
                 onPressed: (){},
@@ -76,5 +100,20 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
     ) ;
+  }
+
+  // ignore: non_constant_identifier_names
+  Future<bool> FingerPrint() async {
+    bool isBiometricSupported = await localAuthentication.isDeviceSupported();
+    bool canCheckBiometrics = await localAuthentication.canCheckBiometrics;
+    bool isAuthenticated = false;
+
+    if(isBiometricSupported && canCheckBiometrics) {
+      isAuthenticated = await localAuthentication.authenticate(
+          localizedReason: "Please complete the biometrics to proceed.",
+          options: const AuthenticationOptions(biometricOnly: true)
+      );
+    }
+    return isAuthenticated;
   }
 }
