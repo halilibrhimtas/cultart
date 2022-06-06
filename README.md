@@ -80,6 +80,7 @@ Film için veriler Tmdb'den çekilmiştir. Örnek vizyona girecek olan film ve t
 - ![1](https://user-images.githubusercontent.com/74383996/172234918-fd136aa7-aa1d-4025-b3f3-f1b8aaef8be6.PNG)
 
 - **Ürün Son Durumu**
+- https://drive.google.com/drive/folders/1vjl-lKns9Spbd7EZW0cOHg_fjankf2Lu?usp=sharing
 - **Sprint Review**:
 - Uygulama tamamlanmıştır. Gerekli olan özellikler eklenmiştir. 
 - **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Turuncu item'lar gelecek sprintte yapılacak olanları ifade ederken, mavi item'lar şuan ki sprintte yapılmış olanları ifade eder. Yeşil itemler ise geçmiş sprintte yapılmış olanları ifade eder.
