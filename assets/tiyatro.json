@@ -1,122 +1,154 @@
 [
     {
       "sehir": "Adana",
+      "salon": "Adana Devlet Tiyatrosu",
       "oyunAdi": "YARINLARA GEÇ KALMADAN",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2738_c37a360b-f89e-4b8f-a4af-c0be6c6d899c.jpeg",
       "yazan": "Feyzullah Arslan - Nermin Ertürkmen",
       "oyunKonusu": "Murat, Mehmet ve Şükufe’nin üç çocuğundan ortanca olanıdır. Aile içindeki kavga ve iletişimsizlik, babanın oğluna olan ilgisizliği zaman içinde Murat’ın kırgınlıklarını arttırır.Murat’ın yalnızlığı onun hata yapmasına neden olur. Yarınlara Geç Kalmadan, bir çocuğun hayatının nasıl bir anda değiştiğini ve bu değişimde kimlerin nerede hata yaptıklarını gözler önüne sermektedir.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2738?a=yarinlara-gec-kalmadan"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2738?a=yarinlara-gec-kalmadan",
+      "salonKonum": {"latitude": 36.9906966, "longitude": 35.3312792}
     },
     {
       "sehir": "Adana",
+      "salon": "Adana Devlet Tiyatrosu",
       "oyunAdi": "SIRADAN BİR GÜN",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2487_12f67c2d-6abf-4ace-bf0d-ae05dc94fcff.jpeg",
       "yazan": "Dario Fo- Franca Rame",
       "oyunKonusu": "Reklam tasarımcısı olan Giulia kocası tarafından terk edilmiştir. Hayatı giderek anlamsızlaşmış ve intihar etmeye karar vermiştir. Ölmeden önce kocasına bir video kaset bırakmak ister. Bu veda kaseti aynı zamanda acımasız bulduğu düzenin katlanamadığı ve katılmak istemediği oyunlarına karşı da bir cevaptır. Oyunda Giulia’nın ruh hali ve son gününde yaşadığı trajikomik bir kurgu içinde anlatılmaktadır. Kadın sorunlarının ele alındığı, teknoloji ve tüketim toplumu içinde yabancılaşan, yalnızlaşan bir kadının öyküsüyle, eğitimli, modern, ekonomik özgürlüğü olan kadınların bile toplumdaki özellikle erkeklerin dünyasındaki rolü vurgulanmakta ve eleştirilmektedir.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2487?a=siradan-bir-gun"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2487?a=siradan-bir-gun",
+      "salonKonum": {"latitude": 36.9906966, "longitude": 35.3312792}
     },
-    {
+  {
       "sehir": "Adana",
+      "salon": "Adana Devlet Tiyatrosu",
       "oyunAdi": "ARZU TRAMVAYI",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2644_50dbb1a8-007c-4cf3-9d55-9ccac9543e77.jpeg",
       "yazan": "Tennessee Williams",
       "oyunKonusu": "Ben hiçbir zaman kuvvetli ve kendine güvenen biri olamadım. Yumuşak insanlar içten içe parlarlar, ateş basar kızarırlar. Yumuşak renkler takınırlar, tıpkı bir kelebeğin kanatlarındaki renkler gibi. Onlar ışığın üzerine kağıttan bir fener geçirmek zorundadır. Ve şimdi ben yavaş yavaş sönüyorum. Bu hileli oyunu daha ne kadar sürdürebilirim bilmiyorum…",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2644?a=arzu-tramvayi"
-    }
-  ,{
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2644?a=arzu-tramvayi",
+      "salonKonum": {"latitude": 36.9906966, "longitude": 35.3312792}
+    },
+  {
       "sehir": "İstanbul",
+      "salon": "İstanbul Devlet Tiyatrosu",
       "oyunAdi": "YEDİ KADIN",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2731_06088291-4772-411e-b518-54bb02623dd0.jpeg",
       "yazan": "Barbara Schottenfeld",
       "oyunKonusu": "Birbirini hiç tanımayan yedi kadının yollari kişisel gelisim kursunda  kesişir. Altı haftalık süreçte kadınlar kendilerini özgürce ifade etmenin yollarını ararlar. Oyun, toplumda kadın olarak var olmayı yeniden keşfeden yedi kadının hikayesidir.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2731?a=yedi-kadin"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2731?a=yedi-kadin",
+      "salonKonum": {"latitude": 41.0378835, "longitude": 28.98582}
     },
     {
       "sehir": "İstanbul",
+      "salon": "İstanbul Devlet Tiyatrosu",
       "oyunAdi": "KOSOVALI PEER GYNT",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2343_11f2b679-7e7d-41cb-8352-7754198b83dd.jpeg",
       "yazan": "Yeton Neziray",
       "oyunKonusu": "1990-2014 yılları arasında ülkesindeki olumsuzluklardan kaçıp diğer Avrupa ülkelerinde yaşamını sürdürmeye çalışan genç bir insanın dramatik serüvenini gerçekçi-şiirsel bir dille anlatıyor.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2343?a=kosovali-peer-gynt"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2343?a=kosovali-peer-gynt",
+      "salonKonum": {"latitude": 41.0378835, "longitude": 28.98582}
+
     },
     {
       "sehir": "İstanbul",
+      "salon": "İstanbul Devlet Tiyatrosu",
       "oyunAdi": "BİR RUHUN HİKAYESİ",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2730_552179af-ccc8-4003-8d28-9a24fcb051de.jpeg",
       "yazan": "Ingmar Bergman",
       "oyunKonusu": "Ingmar Bergman'ın sinema filmi için yazdığı aynı adlı eserinden uyarlanan monolog oyun, kadının hayatta varoluş hesaplaşmasını anlatıyor. Neden her şey karmakarışık bir hale geldi? Hiç durmadan konuşuyorum ve insanlar susuyor ve sırtlarını dönüp gidiyorlar. Hayır, yakınmayacağım. Şu dünyada yakınmak için hiçbir sebebim yok. Zor olan tabii ki de düşüncülerim ve hayallerimle doldurduğum bir boşlukta yaşamam. Gerçeklerden kaçıp hayallerine sığınan ve hayallerinden uyanıp gerçeğine düşen Viktoria, artık karmaşık bir hale gelen anılarındaki; acılarını, mutluluklarını, kayıplarını, ayrılıklarını, mutsuz evliliğini, ailesini ve çocukluğunu ruhunda gizlediği hikayeleri ileanlatırken hayal ve hayat arasında zihninde yolculuk yapar.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2730?a=bir-ruhun-hikayesi"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2730?a=bir-ruhun-hikayesi",
+      "salonKonum": {"latitude": 41.0378835, "longitude": 28.98582}
+
     },
     {
       "sehir": "Ankara",
+      "salon": "Ankara Devlet Tiyatrosu",
       "oyunAdi": "LEYLÂ İLE MECNUN",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2424_30d2176e-9fdf-4146-a4cd-5774a89dfd65.jpeg",
       "yazan": "Prof. Dr. İskender Pala",
       "oyunKonusu": "Leylâ ile Mecnun’un aşkları eski bir efsanedir. Leylâ ile Mecnun arasında geçen, birbirine kavuşamayan ve aşkları uğruna ölen iki gencin öyküsüdür.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2424?a=leyl%C3%A2-ile-mecnun"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2424?a=leyl%C3%A2-ile-mecnun",
+      "salonKonum": {"latitude": 39.9311936, "longitude": 32.7221102}
     },
     {
       "sehir": "Ankara",
+      "salon": "Ankara Devlet Tiyatrosu",
       "oyunAdi": "BİNBİR GECE MASALLARI ",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2739_251104ab-a7c9-4e0b-a67c-609204aa7ef8.jpeg",
       "yazan": "Anonim",
       "oyunKonusu": "Dünyaca ünlü “1001 Gece Masalları”, çok büyük bir coğrafyanın ve insanlığın ortak mirası. Şehrazat anlatır, Hükümdar Şehriyar dinler… Bu kez Şehriyar’ın gözünden takip ediyoruz masalları, onun dünyasına giriyoruz. Ama bu kez karanlık, tavizsiz ve sert.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2739?a=binbir-gece-masallari"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2739?a=binbir-gece-masallari",
+      "salonKonum": {"latitude": 39.9311936, "longitude": 32.7221102}
     },
     {
       "sehir": "Ankara",
+      "salon": "Ankara Devlet Tiyatrosu",
       "oyunAdi": "OCAK",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2715_752e0b26-5273-4b92-a1e4-535a5f39fe39.jpeg",
       "yazan": "Turgut Özakman",
       "oyunKonusu": "Hayal, yenilgi ve yokluk arasında 60’ların Türkiye’sinde bir ailenin hayata dair var olma çabası. Çekip gitmeye inat, bir ocağın etrafında bir arada olmaya, birlikte yaşamaya övgü. Aile bir aradalığının kent yaşamı acımasızlığına direnme ve ayakta kalma süreci.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2715?a=ocak"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2715?a=ocak",
+      "salonKonum": {"latitude": 39.9311936, "longitude": 32.7221102}
     },
     {
       "sehir": "İzmir",
+      "salon": "İzmir Devlet Tiyatrosu",
       "oyunAdi": "OYUNCU (BEN-FEUERBACH)",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2608_e677a8f9-4596-48e6-b31b-c3a334b4183e.jpeg",
       "yazan": "Tankred Dorst",
       "oyunKonusu": "Oyuncu (Ben - Feuerbach) sahnelerden yedi yıl boyunca uzak kalan bir oyuncunun varoluş mücadelesidir.  Bir oyunda verilecek rol için seçme sınavına gelen oyuncu sahnede anılarla örülü içsel bir yolculuğa çıkar. Oyun, yüzeyde bir seçme sınavını anlatır gibi görünse de, daha derinde bir oyuncunun yaşadığı sorunları, o sorunlarla mücadelesini, o mücadelesindeki yalnızlığını ve ötekileştirilmesini anlatır. Oyunculuk ve tiyatro üstüne görüşleriyle sahnede var olmak isteyen ve tiyatroya hayatını feda eden oyuncu, rejisörü beklerken,  asistanla konuşmaya başlar ve oyunlar geliştirir. Her oyun bir iç dökme isteğidir aslında… Ama attığı her adımda, oynadığı her oyunda önemli sırrını da saklamak zorundadır.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2608?a=oyuncu-ben-feuerbach"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2608?a=oyuncu-ben-feuerbach",
+      "salonKonum": {"latitude": 38.4146691, "longitude": 27.0576846}
     },
     {
       "sehir": "İzmir",
+      "salon": "İzmir Devlet Tiyatrosu",
       "oyunAdi": "İNTİHARIN GENEL PROVASI",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2658_c9d099bf-5f8d-4011-858f-5600c3a46a29.jpeg",
       "yazan": "Duşan Kovaçeviç",
       "oyunKonusu": "Oyunumuz mutsuz bir mimarın intihar denemesi ile başlıyor. Görünen gerçekleri simgeleştirdiği nesneler aracılığı ile vermeyi çok iyi bilen Duşan Kovaçeviç’in bu üslubuna bağlı kalarak oyunumuzu sahnelemeye niyetlendik. Yazarımız eski Yugoslavya’da yaşanan kapitalist restorasyonun çok acı neticelerini anlattığı oyunda tek kurşun dahi atmadan ekonomik çöküş ile başlayan parçalanma ve savaş sürecini dile getirmektedir. Sosyalist düzende insanların varlıklı olmamasına rağmen fakir de olmaması, beraberinde toplumdaki “eşitlik” duygusunu da getirdiği için insanlar mutsuz değildir. Bugün bu coğrafyada yaşanan bu mutsuzluğun temel sebebi eşit dağılımın yok olması ile birlikte insanların içindeki umudun da tükenmesidir. Bu da beraberinde insanların var olmak için ödeyeceği bedellerin yüksek olmasına neden olmuştur ve olacaktır. Artık bu düzenin içinde insanlar giderek (parça parça) ölüme yaklaşmaktadır. “Oyunun sonunda Kovaçeviç’in gerçekleri tiyatro ile bütünleşerek anlam kazanır. Çünkü sanat da bu değişimlerden kendi payına düşen darbeyi alsa da çok önemli bir misyonu vardır: Ne olursa olsun hümanist, demokratik ve barışçıl olması çünkü sanat yapısı gereği yapıcı ve onarıcıdır.” Prof.Dr. Hülya NUTKU’ya saygıyla.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2658?a=intiharin-genel-provasi"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2658?a=intiharin-genel-provasi",
+      "salonKonum": {"latitude": 38.4146691, "longitude": 27.0576846}
     },
     {
       "sehir": "İzmir",
+      "salon": "İzmir Devlet Tiyatrosu",
       "oyunAdi": "ARF SABİTİ",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2373_452722a5-3409-4045-bc17-411d3b1c56e8.jpeg",
       "yazan": "Feraye Şahin",
       "oyunKonusu": "Oyun “Arf Sabiti” adını dünya matematik literatürüne geçiren dahi matematikçimiz Cahit Arf’ın yaşamını ve hayatı boyunca mesleği ile vatan sevgisi arasında kalarak sürdürdüğü mücadelesini gözler önüne serer. Biyografik ögelerle beslenmiş, dram türündeki oyun, Cahit Arf’ın hayatından kesitler sunmakta ve ülkemizin önemli bir sorunu olan “beyin göçü” olgusuna dikkat çekmektedir.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2373?a=arf-sabiti"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2373?a=arf-sabiti",
+      "salonKonum": {"latitude": 38.4146691, "longitude": 27.0576846}
     },
    {
       "sehir": "Antalya",
+     "salon": "Antalya Devlet Tiyatrosu",
       "oyunAdi": "TERSİNE DÜNYA",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2647_a314f75b-edc9-4235-9a29-e10d1cfb62d2.jpeg",
       "yazan": "Orhan Kemal",
       "oyunKonusu": "Mahallenin bıçkın kabadayısı Bitirim Leyla, cezaevine düşünce kocası ve oğlunu ardında perişan bırakır. Geçim derdi bir yandan namus belası bir yandan aile çıkmaza sürüklenir. Ailesinin namusunu dert eden Leyla cezaevinden çıkıp mahalleye döndüğünde, çevresinde gelişen olaylar, “namus, namus” dedikçe batağa sürüklenen insanlar hepimizi hayrete düşürür. Orhan Kemal'in aynı adlı romanından sahneye taşınan oyunda erkek ve kadının toplumsal rolleri değiştirilerek cinsel kimlikler üzerindeki sosyal aksaklıklar, toplumsal baskının açtığı arızalar açığa çıkarılır. Bozuk düzenin TERSİNE çevrildiği oyunda durumun vahameti anlatılır.",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2647?a=tersine-dunya"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2647?a=tersine-dunya",
+      "salonKonum": {"latitude": 36.9000194, "longitude": 30.7009156}
     },
     {
       "sehir": "Antalya",
+      "salon": "Antalya Devlet Tiyatrosu",
       "oyunAdi": "ZİYARETÇİ",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2577_49fc5fee-8865-422c-a233-1d570e3d997b.jpeg",
       "yazan": "Tuncer Cücenoğlu",
       "oyunKonusu": "Oyunda; yaşam ve ölüm arasında geçen süreçte en önemli değerlerimiz bir kara komedi çerçevesinde işleniyor. Karşılıksız sevginin içinde barınabildiği o yüce varlıklarımız... Annelerimiz...Bir ölüm meleğine dahi karşı durabilecek güçte sevgiyi yüreğinde taşıyan annelerimiz… “Yalnızca gerçek sevgi barındırabilen yürekler dünyayı kurtarabilir.”",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2577?a=ziyaretci"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2577?a=ziyaretci",
+      "salonKonum": {"latitude": 36.9000194, "longitude": 30.7009156}
     },
     {
       "sehir": "Antalya",
+      "salon": "Antalya Devlet Tiyatrosu",
       "oyunAdi": "YASTIK ADAM",
       "oyunAfis": "http://www.devtiyatro.gov.tr/uploads/7001_10000_2548_1e5b247e-32e4-47b6-a59c-02d1b52d338e.jpeg",
       "yazan": "Martin Mcdonagh",
       "oyunKonusu": "Totaliter bir ülkede sorguya çekilen bir yazar, karanlık masallar, işlenen çocuk cinayetleri ve soruşturma boyunca beklenmedik şekilde geçmişlerine yolculuk ettiğimiz kişilerin sıra dışı hikayesi… Hayatın her alanına ve insanın her dönemine nüfuz eden şiddetten söz ediyor. Şiddetin bireyleri ve toplumsal hayatı nasıl bir noktaya taşıdığını fark ettiğimizde bizi dehşete düşürüyor. Çocukluk döneminde ailede başlayan şiddet sarmalının kurbanı olan oyun kişilerinin, çıkmazdan kurtulmak için izledikleri yolun saçmalığı ise güldürüyor… Yazar Katurian’ın sıra dışı öykü anlatılarıyla gelişen oyun; gerçekle kurmacanın, masumla suçlunun, suçla cezanın iç içe geçtiği, birbirine karıştığı bir dünyaya taşıyor izleyenleri. Bu büyük şiddet sarmalının, toplumsal ve bireysel yaşamlarımızın oluşmasında tahminimizden çok daha büyük bir etkisi olduğunu fark etmek düşündürüyor. ",
-      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2548?a=yastik-adam"
+      "oyunUrl": "http://www.devtiyatro.gov.tr/DevletTiyatro/tr/oyundetay/2548?a=yastik-adam",
+      "salonKonum": {"latitude": 36.9000194, "longitude": 30.7009156}
     }
   ]

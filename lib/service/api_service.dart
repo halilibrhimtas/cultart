@@ -36,3 +36,4 @@ class ApiService{
 final movieStateFuture = FutureProvider<List<MovieModel>>((ref) async {
   return ApiService().getMovie() ;
 });
+

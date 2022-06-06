@@ -1,14 +1,10 @@
 import 'dart:convert';
 import 'package:cultart/models/tiyatro.dart';
-import 'package:cultart/pages/tiyatrolar/harita/harita.dart';
-import 'package:cultart/pages/tiyatrolar/sehirler/izmir_detay.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import 'sehirler/adana_detay.dart';
-import 'sehirler/ankara_detay.dart';
-import 'sehirler/antalya_detay.dart';
-import 'sehirler/istanbul_detay.dart';
+import '../../home/login/login_page.dart';
+import 'sehirler/tiyatro_detay.dart';
 
 class TheatrePage extends StatefulWidget {
   const TheatrePage({Key? key}) : super(key: key);
@@ -25,42 +21,61 @@ class _TheatrePageState extends State<TheatrePage> {
   List<Tiyatro> izmirList = [];
   List<Tiyatro> istanbulList = [];
   List<Widget> tabs = const [
-    Tab(icon: Text("Adana", style: TextStyle(color:Colors.black38, fontSize: 16),)),
-    Tab(icon: Text("İstanbul", style: TextStyle(color:Colors.black38, fontSize: 16),)),
-    Tab(icon: Text("Ankara", style: TextStyle(color:Colors.black38, fontSize: 16),)),
-    Tab(icon: Text("Antalya", style: TextStyle(color:Colors.black38, fontSize: 16),)),
-    Tab(icon: Text("İzmir", style: TextStyle(color:Colors.black38, fontSize: 16),)),
+    Tab(
+        icon: Text(
+      "Adana",
+      style: TextStyle(color: Color(0xFF606670), fontSize: 16),
+    )),
+    Tab(
+        icon: Text(
+      "İstanbul",
+      style: TextStyle(color: Color(0xFF606670), fontSize: 16),
+    )),
+    Tab(
+        icon: Text(
+      "Ankara",
+      style: TextStyle(color: Color(0xFF606670), fontSize: 16),
+    )),
+    Tab(
+        icon: Text(
+      "Antalya",
+      style: TextStyle(color: Color(0xFF606670), fontSize: 16),
+    )),
+    Tab(
+        icon: Text(
+      "İzmir",
+      style: TextStyle(color: Color(0xFF606670), fontSize: 16),
+    )),
   ];
-
 
   Future<void> tiyatroIndir() async {
     var response = await rootBundle.loadString("assets/tiyatro.json");
     List<dynamic> data = jsonDecode(response);
     tiyatroList = data.map((data) => Tiyatro.fromJson(data)).toList();
     setState(() {
-      for(int i = 0; i <= 14; i++){
-        if(tiyatroList[i].sehir == "Adana") {
+      for (int i = 0; i <= 14; i++) {
+        if (tiyatroList[i].sehir == "Adana") {
           adanaList.add(tiyatroList[i]);
         }
-        if(tiyatroList[i].sehir == "Antalya") {
+        if (tiyatroList[i].sehir == "Antalya") {
           antalyaList.add(tiyatroList[i]);
         }
-        if(tiyatroList[i].sehir == "İstanbul") {
+        if (tiyatroList[i].sehir == "İstanbul") {
           istanbulList.add(tiyatroList[i]);
         }
-        if(tiyatroList[i].sehir == "Ankara") {
+        if (tiyatroList[i].sehir == "Ankara") {
           ankaraList.add(tiyatroList[i]);
         }
-        if(tiyatroList[i].sehir == "İzmir") {
+        if (tiyatroList[i].sehir == "İzmir") {
           izmirList.add(tiyatroList[i]);
         }
       }
-
     });
   }
 
   @override
   void initState() {
+    // ignore: todo
     // TODO: implement initState
     super.initState();
     tiyatroIndir();
@@ -68,59 +83,56 @@ class _TheatrePageState extends State<TheatrePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
+      length: tabs.length,
       initialIndex: 0,
-      length: 5,
       child: Scaffold(
-        appBar: AppBar(
-          bottom: TabBar(
-            indicator: BoxDecoration(
-              borderRadius: BorderRadius.circular(25),
-              color: Colors.black38
+        drawer: Header(),
+          appBar: AppBar(
+            actions: [
+              IconButton(onPressed: () async {
+                await FirebaseAuth.instance.signOut().then((value) =>
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LoginPage()
+                        )
+                    )
+                );
+              },
+                  icon: const Icon(Icons.exit_to_app_rounded), color: const Color(0xFF606670),),
+            ],
+            bottom: TabBar(
+                indicator: BoxDecoration(
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.white,
+                border: Border.all(color: const Color(0xFF606670))),
+                labelColor: Colors.white,
+                isScrollable: true,
+                physics: const BouncingScrollPhysics(),
+                tabs: tabs),
+            centerTitle: true,
+            title: const Text(
+              "TİYATRO",
+              style: TextStyle(
+                color: Colors.black38,
+                fontSize: 25,
+                fontWeight: FontWeight.w300,
+              ),
             ),
-            labelColor: Colors.white,
-            isScrollable: true,
-            physics: const BouncingScrollPhysics(),
-            tabs: tabs ),
-          centerTitle: true,
-          title:  const Text(
-            "TİYATRO",
-            style: TextStyle(
-              color: Colors.black38,
-              fontSize: 25,
-              fontWeight: FontWeight.w300,
-            ),
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            automaticallyImplyLeading: false,
           ),
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          leading: const Icon(
-            Icons.menu_rounded,
-            color: Colors.black38,
-          ),
-          automaticallyImplyLeading: false,
-          actions: [
-            Container(
-              margin: const EdgeInsets.only(right: 15),
-              child: IconButton(icon: const Icon(Icons.map_sharp), color: Colors.black38, onPressed: ()  {
-                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const Harita()));
-              },),
-            )
-          ],
-        ),
-        body: TabBarView(
-          children: [
-            AdanaPage(adanaList: adanaList),
-            IstanbulPage(istanbulList: istanbulList),
-            AnkaraPage(ankaraList: ankaraList),
-            AntalyaPage(antalyaList: antalyaList),
-            IzmirPage(izmirList: izmirList),
-          ],
-        )
-      ),
+          body: TabBarView(
+            children: [
+              AdanaPage(adanaList: adanaList),
+              IstanbulPage(istanbulList: istanbulList),
+              AnkaraPage(ankaraList: ankaraList),
+              AntalyaPage(antalyaList: antalyaList),
+              IzmirPage(izmirList: izmirList),
+            ],
+          )),
     );
-
   }
 }
 
@@ -143,23 +155,33 @@ class IzmirPage extends StatelessWidget {
               return SingleChildScrollView(
                 child: Container(
                   padding: const EdgeInsets.all(8),
-                  child: Column(
-                    children: [
-                      Image.network(izmirTiyatro.oyunAfis!, height: 400, width: 350,),
-                      const Padding(padding: EdgeInsets.only(bottom: 8.0)),
-                      TextButton(child: Text(izmirTiyatro.oyunAdi!), onPressed: (){
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => IzmirDetaySayfasi(tiyatro: izmirTiyatro,)));
-                      },)
-                    ],
+                  child: InkWell(
+                    child: Column(
+                      children: [
+                        Image.network(
+                          izmirTiyatro.oyunAfis!,
+                          height: 400,
+                          width: 350,
+                        ),
+                        const Padding(padding: EdgeInsets.only(bottom: 8.0)),
+                        Text(izmirTiyatro.oyunAdi!,
+                          style: const TextStyle(color: Color(0xFF606670),
+                              fontWeight: FontWeight.bold),
+                          softWrap: true,)
+                      ],
+                    ),
+                    onTap: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TiyatroDetaySayfasi(
+                                tiyatro: izmirTiyatro,
+                              )));
+                    },
                   ),
                 ),
               );
-            }
-        )
-    );
+            }));
   }
 }
 
@@ -182,23 +204,32 @@ class AntalyaPage extends StatelessWidget {
               return SingleChildScrollView(
                 child: Container(
                   padding: const EdgeInsets.all(8),
-                  child: Column(
-                    children: [
-                      Image.network(antalyaTiyatro.oyunAfis!, height: 400, width: 350,),
-                      const Padding(padding: EdgeInsets.only(bottom: 8.0)),
-                      TextButton(child: Text(antalyaTiyatro.oyunAdi!), onPressed: (){
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                            builder: (context) =>  AntalyaDetaySayfasi(tiyatro: antalyaTiyatro)));
-                      },)
-                    ],
+                  child: InkWell(
+                    child: Column(
+                      children: [
+                        Image.network(
+                          antalyaTiyatro.oyunAfis!,
+                          height: 400,
+                          width: 350,
+                        ),
+                        const Padding(padding: EdgeInsets.only(bottom: 8.0)),
+                        Text(antalyaTiyatro.oyunAdi!,
+                          style: const TextStyle(color: Color(0xFF606670),
+                              fontWeight: FontWeight.bold),
+                          softWrap: true,)
+                      ],
+                    ),
+                    onTap: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TiyatroDetaySayfasi(
+                                  tiyatro: antalyaTiyatro)));
+                    },
                   ),
                 ),
               );
-            }
-        )
-    );
+            }));
   }
 }
 
@@ -221,23 +252,34 @@ class AnkaraPage extends StatelessWidget {
               return SingleChildScrollView(
                 child: Container(
                   padding: const EdgeInsets.all(8),
-                  child: Column(
-                    children: [
-                      Image.network(ankaraTiyatro.oyunAfis!, height: 400, width: 350,),
-                      const Padding(padding: EdgeInsets.only(bottom: 8.0)),
-                      TextButton(child: Text(ankaraTiyatro.oyunAdi!), onPressed: (){
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => AnkaraDetaySayfasi(tiyatro: ankaraTiyatro)));
-                      },)
-                    ],
+                  child: InkWell(
+                    child: Column(
+                      children: [
+                        Image.network(
+                          ankaraTiyatro.oyunAfis!,
+                          height: 400,
+                          width: 350,
+                        ),
+                        const Padding(padding: EdgeInsets.only(bottom: 8.0)),
+                        Text(ankaraTiyatro.oyunAdi!,
+                          style: const TextStyle(
+                              color: Color(0xFF606670),
+                              fontWeight: FontWeight.bold),
+                          softWrap: true,
+                        )
+                      ],
+                    ),
+                    onTap: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TiyatroDetaySayfasi(
+                                  tiyatro: ankaraTiyatro)));
+                    },
                   ),
                 ),
               );
-            }
-        )
-    );
+            }));
   }
 }
 
@@ -256,28 +298,37 @@ class IstanbulPage extends StatelessWidget {
             scrollDirection: Axis.vertical,
             itemCount: istanbulList.length,
             itemBuilder: (context, index) {
-              Tiyatro istanbulTiyatro= istanbulList[index];
+              Tiyatro istanbulTiyatro = istanbulList[index];
               return SingleChildScrollView(
                 child: Container(
                   padding: const EdgeInsets.all(8),
-                  child: Column(
-                    children: [
-                      Image.network(istanbulTiyatro.oyunAfis!, height: 400, width: 350,),
-                      const Padding(padding: EdgeInsets.only(bottom: 8.0)),
-                      TextButton(child: Text(istanbulTiyatro.oyunAdi!), onPressed: (){
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => IstanbulDetaySayfasi(tiyatro: istanbulTiyatro)));
-                      },
-                      )
-                    ],
+                  child: InkWell(
+                    child: Column(
+                      children: [
+                        Image.network(
+                          istanbulTiyatro.oyunAfis!,
+                          height: 400,
+                          width: 350,
+                        ),
+                        const Padding(padding: EdgeInsets.only(bottom: 8.0)),
+                        Text(istanbulTiyatro.oyunAdi!,
+                          style: const TextStyle(color: Color(0xFF606670),
+                              fontWeight: FontWeight.bold),
+                          softWrap: true,
+                        )
+                      ],
+                    ),
+                    onTap: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TiyatroDetaySayfasi(
+                                  tiyatro: istanbulTiyatro)));
+                    },
                   ),
                 ),
               );
-            }
-        )
-    );
+            }));
   }
 }
 
@@ -291,31 +342,97 @@ class AdanaPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: PageView.builder(
-        scrollDirection: Axis.vertical,
-        itemCount: adanaList.length,
-        itemBuilder: (context, index) {
-          Tiyatro adanaTiyatro = adanaList[index];
-          return SingleChildScrollView(
-    child: Container(
-      padding: const EdgeInsets.all(8),
-      child: Column(
-        children: [
-          Image.network(adanaTiyatro.oyunAfis!, height: 400, width: 350,),
-          const Padding(padding: EdgeInsets.only(bottom: 8.0)),
-          TextButton(child: Text(adanaTiyatro.oyunAdi!), onPressed: (){
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => AdanaDetaySayfasi(tiyatro: adanaTiyatro)));
-          },)
-        ],
-      ),
-    ),
-          );
-      }
-      )
+    return Scaffold(
+      body: Center(
+          child: PageView.builder(
+              scrollDirection: Axis.vertical,
+              itemCount: adanaList.length,
+              itemBuilder: (context, index) {
+                Tiyatro adanaTiyatro = adanaList[index];
+                return SingleChildScrollView(
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    child: InkWell(
+                      child: Column(
+                        children: [
+                          Image.network(
+                            adanaTiyatro.oyunAfis!,
+                            height: 400,
+                            width: 350,
+                          ),
+                          const Padding(padding: EdgeInsets.only(bottom: 8.0)),
+                          Text(adanaTiyatro.oyunAdi!,
+                            style: const TextStyle(color: Color(0xFF606670),
+                                fontWeight: FontWeight.bold),
+                          softWrap: true,
+                          )
+                        ],
+                      ),
+                      onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => TiyatroDetaySayfasi(
+                                    tiyatro: adanaTiyatro)));
+                      },
+                    ),
+                  ),
+                );
+              })),
+    );
+  }
+}
+
+class Header extends StatelessWidget {
+  Header({
+    Key? key,
+  }) : super(key: key);
+
+  String? url;
+  String uid = FirebaseAuth.instance.currentUser!.uid;
+
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            UserAccountsDrawerHeader( // <-- SEE HERE
+              decoration: const BoxDecoration(color: Color(0xff764abc)),
+              accountName: Text(
+                FirebaseAuth.instance.currentUser!.displayName!,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              accountEmail: Text(
+                FirebaseAuth.instance.currentUser!.email!,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              currentAccountPicture:
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: Image.network(FirebaseAuth.instance.currentUser!.photoURL!).image,
+              ),
+            ),
+            ListTile(
+              leading: IconButton(onPressed: ()async {
+                await FirebaseAuth.instance.signOut().then((value) =>
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LoginPage()
+                        )
+                    )
+                );
+              },
+                  icon: const Icon(Icons.exit_to_app_rounded)),
+              title: const Text("Çıkış"),
+            ),
+          ],
+        )
     );
   }
 }

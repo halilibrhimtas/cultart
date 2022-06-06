@@ -7,13 +7,14 @@ part of 'tiyatro.dart';
 // **************************************************************************
 
 Tiyatro _$TiyatroFromJson(Map<String, dynamic> json) => Tiyatro(
-      sehir: json['sehir'] as String?,
-      oyunAdi: json['oyunAdi'] as String?,
-      oyunAfis: json['oyunAfis'] as String?,
-      oyunKonusu: json['oyunKonusu'] as String?,
-      oyunUrl: json['oyunUrl'] as String?,
-      yazan: json['yazan'] as String?,
-    );
+    sehir: json['sehir'] as String?,
+    oyunAdi: json['oyunAdi'] as String?,
+    oyunAfis: json['oyunAfis'] as String?,
+    oyunKonusu: json['oyunKonusu'] as String?,
+    oyunUrl: json['oyunUrl'] as String?,
+    yazan: json['yazan'] as String?,
+    salon: json['salon'] as String?,
+    salonKonum: json["salonKonum"] as Map?);
 
 Map<String, dynamic> _$TiyatroToJson(Tiyatro instance) => <String, dynamic>{
       'sehir': instance.sehir,
@@ -22,4 +23,6 @@ Map<String, dynamic> _$TiyatroToJson(Tiyatro instance) => <String, dynamic>{
       'oyunAfis': instance.oyunAfis,
       'oyunKonusu': instance.oyunKonusu,
       'oyunUrl': instance.oyunUrl,
+      'salon': instance.salon,
+      "salonKonum": instance.salonKonum,
     };

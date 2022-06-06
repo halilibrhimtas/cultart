@@ -1,9 +1,6 @@
 import 'package:cultart/home/login/google_sign_in.dart';
-import 'package:cultart/home/login/signIn_page.dart';
-import 'package:cultart/home/login/signUp_page.dart';
 import 'package:flutter/material.dart';
-import 'package:local_auth/local_auth.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 import '../home_page.dart';
 
 
@@ -15,105 +12,72 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final LocalAuthentication localAuthentication = LocalAuthentication();
+
+
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: (){
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SignInPage()),
-                );
-              },
-              child: const Text("GİRİŞ"),
-              style: ElevatedButton.styleFrom(
-                primary: Colors.black38,
-                fixedSize: const Size(150,75),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)
-                )
-              )
-            ),
-            const Padding(padding: EdgeInsets.all(8)),
-            ElevatedButton(
-                onPressed: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const SignUpPage()),
-                  );
-                },
-                child: const Text("KAYIT OL"),
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.black38,
-                  fixedSize: const Size(150,75),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(50)
-                  )
-                )
-            ),
-            ElevatedButton(onPressed: () async {
-              await signInWithGoogle().then((value) => Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const HomePage())));
-            },
-                child: const Text("Sign in with Google")),
-            ElevatedButton(
-                onPressed: () async {
-                  bool isAuthenticated = await FingerPrint();
-                  if(isAuthenticated){
-                    Navigator.pushReplacement(
-                        context,
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Color(0xFF606670),
+              Colors.white
+            ]
+          )
+        ),
+        child: Card(
+          margin: const EdgeInsets.only(top: 150, bottom: 200, left: 30, right: 30),
+          elevation: 20,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Image.asset("assets/logo.png", scale: 5,),
+                const Padding(padding: EdgeInsets.all(8)),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: const Color(0xFF606670),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    fixedSize: const Size(200, 50)
+                  ),
+                    onPressed: () async {
+
+                  await signInWithGoogle().then((value) async {
+                    SharedPreferences prefs = await SharedPreferences.getInstance();
+                    prefs.setString("email", "useremail");
+                    Navigator.pushReplacement(context,
                         MaterialPageRoute(
-                            builder: (context) => const HomePage()
-                        )
-                    );
+                            builder: (context) => const HomePage()));
 
-                  } else {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                          content: Text('Error authenticating using Biometrics.')
-                      ),
-                    );
-                  }
-
+                  });
                 },
-                child: const Text("Finger Print")),
-            const SizedBox(height: 50),
-            TextButton(
-                onPressed: (){},
-                child: const Text("Giriş yapmadan devam edin",
-                style: TextStyle(
-                  decoration: TextDecoration.underline,
-                  color: Colors.black38
-                ),
-                ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Image.asset("assets/google.png", scale: 30,),
+                        const Padding(padding: EdgeInsets.only(right: 8)),
+                        const Text("Sign in with Google", ),
+                      ],
+                    )),
+                const SizedBox(height: 50),
+
+              ],
             ),
-          ],
+          ),
         ),
       ),
     ) ;
-  }
-
-  // ignore: non_constant_identifier_names
-  Future<bool> FingerPrint() async {
-    bool isBiometricSupported = await localAuthentication.isDeviceSupported();
-    bool canCheckBiometrics = await localAuthentication.canCheckBiometrics;
-    bool isAuthenticated = false;
-
-    if(isBiometricSupported && canCheckBiometrics) {
-      isAuthenticated = await localAuthentication.authenticate(
-          localizedReason: "Please complete the biometrics to proceed.",
-          options: const AuthenticationOptions(biometricOnly: true)
-      );
-    }
-    return isAuthenticated;
   }
 }
