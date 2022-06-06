@@ -71,7 +71,18 @@ Film için veriler Tmdb'den çekilmiştir. Örnek vizyona girecek olan film ve t
 - **Sprint içinde tamamlanması tahmin edilen puan**: 300
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. İkinci sprint'in 300 puan olması gerektiğine karar verildi.
 - **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Wahtsapp üzerinden yapılmasına karar verilmiştir. Fotoğraf olarak paylaşılacaktır.
-- ![_Halil kişisinden fotoğraf](https://user-images.githubusercontent.com/74383996/169966694-db5492a9-de98-49db-9918-1ea2ce7d05b3.jpg)
+- https://drive.google.com/drive/folders/1uwXNDFp5AnN2YqWbznnba5xS2s989xtZ?usp=sharing
 - **Sprint Board Update**:
 - ![image](https://user-images.githubusercontent.com/74383996/169966614-54887345-b5b4-4bcf-8fe3-2a83c3d9dce3.png)
+- ![2](https://user-images.githubusercontent.com/74383996/172234911-cb469839-3ba2-48ea-a47f-6d7401792748.PNG)
+- ![3](https://user-images.githubusercontent.com/74383996/172234915-c718f7d1-42ab-49bf-837c-b7a3d8e6a40c.PNG)
+- ![4ı](https://user-images.githubusercontent.com/74383996/172234917-d399cce4-3edd-4efa-9d26-4caf6e3aa4e9.PNG)
+- ![1](https://user-images.githubusercontent.com/74383996/172234918-fd136aa7-aa1d-4025-b3f3-f1b8aaef8be6.PNG)
+
+- **Ürün Son Durumu**
+- **Sprint Review**:
+- Uygulama tamamlanmıştır. Gerekli olan özellikler eklenmiştir. 
+- **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Turuncu item'lar gelecek sprintte yapılacak olanları ifade ederken, mavi item'lar şuan ki sprintte yapılmış olanları ifade eder. Yeşil itemler ise geçmiş sprintte yapılmış olanları ifade eder.
+- **Sprint Retrospective**:
+- Bu sprintte 220 puan elde ettik. Bir dahaki projemizde paunlamayı dikkatli yapmamız gerekiyor.
 
