@@ -28,20 +28,8 @@ https://miro.com/app/board/uXjVOzu_C3k=/?share_link_id=535270060641
 
 -  **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Turuncu item'lar gelecek sprintte yapılacak olanları ifade ederken, mavi item'lar şuan ki sprintte yapılmış olanları ifade eder. Yeşil itemler ise geçmiş sprintte yapılmış olanları ifade eder.
 
--  **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Wahtsapp üzerinden yapılmasına karar verilmiştir. Fotoğraf olarak paylaşılacaktır.
-![WhatsApp Image 2022-05-22 at 22 13 26 (1)](https://user-images.githubusercontent.com/74383996/169712090-9c7b4576-6ee2-4b36-9d60-d7acce426373.jpeg)
-![WhatsApp Image 2022-05-22 at 22 13 26](https://user-images.githubusercontent.com/74383996/169712092-c500b61b-ba82-4b2e-ab04-bb7e5b88551a.jpeg)
-![WhatsApp Image 2022-05-22 at 22 13 27 (1)](https://user-images.githubusercontent.com/74383996/169712093-4a604585-89b5-430e-bce4-ee7e01bbf8c8.jpeg)
-![WhatsApp Image 2022-05-22 at 22 13 27](https://user-images.githubusercontent.com/74383996/169712094-4e7d7287-78ec-40bc-b08b-07a9cd8b6789.jpeg)
-![WhatsApp Image 2022-05-22 at 22 13 28 (1)](https://user-images.githubusercontent.com/74383996/169712095-966c1e46-3443-4056-99c5-2555967d06ee.jpeg)
-![WhatsApp Image 2022-05-22 at 22 13 28](https://user-images.githubusercontent.com/74383996/169712096-49987920-9de9-4da7-a9be-34d3ebc44115.jpeg)
-![WhatsApp Image 2022-05-22 at 22 13 29](https://user-images.githubusercontent.com/74383996/169712097-2812e1b3-3de9-42c0-b227-c5053d2cb810.jpeg)
-![WhatsApp Image 2022-05-22 at 22 13 30 (1)](https://user-images.githubusercontent.com/74383996/169712098-a60daaa8-5101-490c-844e-d04ddc12360a.jpeg)
-![WhatsApp Image 2022-05-22 at 22 13 30 (2)](https://user-images.githubusercontent.com/74383996/169712100-46531990-a00c-4488-b9d9-c2a7b701c1a3.jpeg)
-![WhatsApp Image 2022-05-22 at 22 13 30](https://user-images.githubusercontent.com/74383996/169712101-b5d1353f-0b09-415f-a921-b473b45263b2.jpeg)
-![WhatsApp Image 2022-05-22 at 22 13 25](https://user-images.githubusercontent.com/74383996/169712102-b58f8d5c-b3a8-4eed-8872-8bfa1a7c2ee3.jpeg)
-
-
+-  **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Fotoğraf olarak paylaşılacaktır.
+-  
 -  **Sprint Board Update**:
 
 ![1](https://user-images.githubusercontent.com/74383996/169709064-54237b2c-9cf4-4376-9761-f6959fc9e668.PNG)
